@@ -25,4 +25,3 @@ nbdist/
 out/
 logs/
 .nb-gradle/
-static/
