@@ -29,6 +29,11 @@ class PointController {
         return new ResponseEntity<>(points, HttpStatus.OK);
     }
 
+    @RequestMapping(method = RequestMethod.GET, path = "authenticate")
+    ResponseEntity<Object> authenticate() {
+        return new ResponseEntity<>("Emm... should be ok.", HttpStatus.OK);
+    }
+
     @RequestMapping(method = RequestMethod.GET, path = "points/deviceIds")
     ResponseEntity<Object> getDeviceIds() {
         List<String> deviceIds = pointService.getAllDeviceIds();

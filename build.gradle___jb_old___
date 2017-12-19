@@ -39,10 +39,6 @@ dependencies {
         exclude module: "spring-boot-starter-logging"
         exclude module: "logback-classic"
     }
-    compile('org.springframework.boot:spring-boot-starter-security:1.4.0.RELEASE') {
-        exclude module: 'org.springframework.boot:spring-boot-starter-logging'
-        exclude module: "logback-classic"
-    }
     compile group: 'io.springfox', name: 'springfox-swagger2', version: '2.7.0'
     compile group: 'io.springfox', name: 'springfox-swagger-ui', version: '2.7.0'
     testCompile('org.springframework.boot:spring-boot-starter-test')
